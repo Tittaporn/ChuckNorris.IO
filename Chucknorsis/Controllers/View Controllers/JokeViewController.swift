@@ -25,6 +25,7 @@ class JokeViewController: UIViewController {
         fetchCategories()
         self.categoriesPickerView.delegate = self
         self.categoriesPickerView.dataSource = self
+        fetchJoke(catagory: "animal")
     }
     
     // MARK: - Actions
