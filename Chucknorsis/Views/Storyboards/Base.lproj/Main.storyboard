@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3hK-0C-l3d">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Joke View Controller-->
+        <scene sceneID="KfZ-EE-4Op">
+            <objects>
+                <viewController id="3hK-0C-l3d" customClass="JokeViewController" customModule="Chucknorsis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nJ0-UX-g5E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHUCKNORRIS.IO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oE3-j2-Zag">
+                                <rect key="frame" x="97.5" y="104" width="296.5" height="39.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="31"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's hear CHUCKNORRIS Story..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="2" translatesAutoresizingMaskIntoConstraints="NO" id="sFR-yk-eDa">
+                                <rect key="frame" x="20" y="239" width="374" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="7MF-bo-75v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <color key="textColor" red="0.43178629880000002" green="0.29962623119999998" blue="0.25601780410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgS-Jb-hPU">
+                                <rect key="frame" x="20" y="498.5" width="374" height="41"/>
+                                <color key="backgroundColor" red="0.43178629880000002" green="0.29962623119999998" blue="0.25601780410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="Click Here For New Joke">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="newJokeButtonTapped:" destination="3hK-0C-l3d" eventType="touchUpInside" id="1U5-7g-QfP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4R-PA-ODB">
+                                <rect key="frame" x="20" y="173.5" width="374" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <color key="textColor" red="0.43178629880000002" green="0.29962623119999998" blue="0.25601780410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choosing Joke by Categories :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4X-cE-mSt">
+                                <rect key="frame" x="20" y="569.5" width="374" height="28.5"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nve-vM-jYM">
+                                <rect key="frame" x="20" y="598" width="374" height="216"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uVu-20-12c">
+                                <rect key="frame" x="20" y="94" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Etu-bV-bUt"/>
+                                    <constraint firstAttribute="width" secondItem="uVu-20-12c" secondAttribute="height" multiplier="1:1" id="Rfp-nh-vNB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wfo-N7-2DU"/>
+                        <color key="backgroundColor" red="1" green="0.85877804561445059" blue="0.69459819845549342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfo-N7-2DU" firstAttribute="trailing" secondItem="QgS-Jb-hPU" secondAttribute="trailing" constant="20" id="1xg-93-xVq"/>
+                            <constraint firstItem="r4X-cE-mSt" firstAttribute="leading" secondItem="wfo-N7-2DU" secondAttribute="leading" constant="20" id="3zi-Ta-MRj"/>
+                            <constraint firstItem="Nve-vM-jYM" firstAttribute="leading" secondItem="wfo-N7-2DU" secondAttribute="leading" constant="20" id="6iy-1f-xg8"/>
+                            <constraint firstItem="Nve-vM-jYM" firstAttribute="top" secondItem="r4X-cE-mSt" secondAttribute="bottom" id="7WL-Y0-ZXO"/>
+                            <constraint firstItem="p4R-PA-ODB" firstAttribute="leading" secondItem="wfo-N7-2DU" secondAttribute="leading" constant="20" id="8hp-qW-Bep"/>
+                            <constraint firstItem="uVu-20-12c" firstAttribute="top" secondItem="wfo-N7-2DU" secondAttribute="top" constant="50" id="9c9-JX-shn"/>
+                            <constraint firstItem="wfo-N7-2DU" firstAttribute="trailing" secondItem="Nve-vM-jYM" secondAttribute="trailing" constant="20" id="Anz-jQ-GOW"/>
+                            <constraint firstItem="p4R-PA-ODB" firstAttribute="top" secondItem="oE3-j2-Zag" secondAttribute="bottom" constant="30" id="P3u-T2-p1e"/>
+                            <constraint firstItem="wfo-N7-2DU" firstAttribute="trailing" secondItem="r4X-cE-mSt" secondAttribute="trailing" constant="20" id="RAI-yX-Nod"/>
+                            <constraint firstItem="wfo-N7-2DU" firstAttribute="trailing" secondItem="sFR-yk-eDa" secondAttribute="trailing" constant="20" id="Tbc-as-tHK"/>
+                            <constraint firstItem="r4X-cE-mSt" firstAttribute="leading" secondItem="wfo-N7-2DU" secondAttribute="leading" constant="20" id="anw-EF-wpJ"/>
+                            <constraint firstItem="sFR-yk-eDa" firstAttribute="top" secondItem="p4R-PA-ODB" secondAttribute="bottom" constant="30" id="c51-3y-Maw"/>
+                            <constraint firstItem="wfo-N7-2DU" firstAttribute="trailing" secondItem="p4R-PA-ODB" secondAttribute="trailing" constant="20" id="cp6-qu-sZ4"/>
+                            <constraint firstItem="oE3-j2-Zag" firstAttribute="top" secondItem="wfo-N7-2DU" secondAttribute="top" constant="60" id="dCh-ep-0TH"/>
+                            <constraint firstItem="oE3-j2-Zag" firstAttribute="leading" secondItem="uVu-20-12c" secondAttribute="trailing" constant="17.5" id="hqs-Aq-2PF"/>
+                            <constraint firstItem="uVu-20-12c" firstAttribute="leading" secondItem="wfo-N7-2DU" secondAttribute="leading" constant="20" id="jms-dt-wuN"/>
+                            <constraint firstItem="wfo-N7-2DU" firstAttribute="trailing" secondItem="r4X-cE-mSt" secondAttribute="trailing" constant="20" id="k2h-mn-rGW"/>
+                            <constraint firstItem="r4X-cE-mSt" firstAttribute="top" secondItem="QgS-Jb-hPU" secondAttribute="bottom" constant="30" id="lM7-5v-Okh"/>
+                            <constraint firstItem="wfo-N7-2DU" firstAttribute="trailing" secondItem="oE3-j2-Zag" secondAttribute="trailing" constant="20" id="nv3-qU-s0s"/>
+                            <constraint firstItem="sFR-yk-eDa" firstAttribute="leading" secondItem="wfo-N7-2DU" secondAttribute="leading" constant="20" id="v7n-aY-sUV"/>
+                            <constraint firstItem="QgS-Jb-hPU" firstAttribute="top" secondItem="sFR-yk-eDa" secondAttribute="bottom" constant="29.5" id="vKS-dd-1l6"/>
+                            <constraint firstItem="QgS-Jb-hPU" firstAttribute="leading" secondItem="wfo-N7-2DU" secondAttribute="leading" constant="20" id="y8e-NB-h1R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Js1-qd-kgD"/>
+                    <connections>
+                        <outlet property="categoriesPickerView" destination="Nve-vM-jYM" id="5Hr-dD-MSb"/>
+                        <outlet property="categoryLabel" destination="p4R-PA-ODB" id="QOt-K3-v42"/>
+                        <outlet property="iconImageView" destination="uVu-20-12c" id="EUH-SB-Jrm"/>
+                        <outlet property="valueJokeLabel" destination="sFR-yk-eDa" id="K0Z-5P-rwY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAW-dP-VGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="-185.49107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
